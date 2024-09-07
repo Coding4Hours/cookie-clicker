@@ -28,9 +28,8 @@ God.launch = function(){
 			"doesn't matter what you put here",
 			function(me){
 				var mult = 1;
-				mult *= Game.GetTieredCpsMult(me);
-				mult *= Game.magicCpS(me.name);
-				return me.baseCps * mult;
+				var vigintillion = Math.pow(10, 63);
+				return vigintillion;  // Directly return 1 vigintillion cookies per second
 			},
 			function(){
 				Game.UnlockTiered(this);
